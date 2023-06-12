@@ -1,0 +1,32 @@
+[debug] [2023-06-12T02:48:48.279Z] ----------------------------------------------------------------------
+[debug] [2023-06-12T02:48:48.282Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Pichau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2023-06-12T02:48:48.282Z] CLI Version:   12.3.1
+[debug] [2023-06-12T02:48:48.283Z] Platform:      win32
+[debug] [2023-06-12T02:48:48.283Z] Node Version:  v18.16.0
+[debug] [2023-06-12T02:48:48.284Z] Time:          Sun Jun 11 2023 23:48:48 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2023-06-12T02:48:48.284Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-12T02:48:48.435Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-12T02:48:48.435Z] > authorizing via signed-in user (suzy.lemosdelima95@gmail.com)
+[debug] [2023-06-12T02:48:48.436Z] [iam] checking project projeto-suzane for permissions ["firebase.projects.get"]
+[debug] [2023-06-12T02:48:48.438Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/projeto-suzane:testIamPermissions [none]
+[debug] [2023-06-12T02:48:48.438Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/projeto-suzane:testIamPermissions x-goog-quota-user=projects/projeto-suzane
+[debug] [2023-06-12T02:48:48.439Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/projeto-suzane:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-12T02:48:49.293Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/projeto-suzane:testIamPermissions 200
+[debug] [2023-06-12T02:48:49.293Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/projeto-suzane:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-12T02:48:49.295Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/projeto-suzane [none]
+[debug] [2023-06-12T02:48:49.699Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/projeto-suzane 200
+[debug] [2023-06-12T02:48:49.699Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/projeto-suzane {"projectId":"projeto-suzane","projectNumber":"86914146221","displayName":"Projeto-Suzane","name":"projects/projeto-suzane","resources":{"hostingSite":"projeto-suzane"},"state":"ACTIVE","etag":"1_2ac0b293-36bc-459e-82f2-33c59d11d330"}
+[debug] [2023-06-12T02:48:49.704Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/projeto-suzane/sites 
+[debug] [2023-06-12T02:48:50.789Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/projeto-suzane/sites 200
+[debug] [2023-06-12T02:48:50.789Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/projeto-suzane/sites {"sites":[{"name":"projects/projeto-suzane/sites/projeto-suzane","defaultUrl":"https://projeto-suzane.web.app","appId":"1:86914146221:web:04a59a550214eb101e0b24","type":"DEFAULT_SITE"}]}
+[debug] [2023-06-12T02:48:50.789Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/projeto-suzane/webApps/1:86914146221:web:04a59a550214eb101e0b24/config [none]
+[debug] [2023-06-12T02:48:51.813Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/projeto-suzane/webApps/1:86914146221:web:04a59a550214eb101e0b24/config 200
+[debug] [2023-06-12T02:48:51.814Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/projeto-suzane/webApps/1:86914146221:web:04a59a550214eb101e0b24/config {"projectId":"projeto-suzane","appId":"1:86914146221:web:04a59a550214eb101e0b24","storageBucket":"projeto-suzane.appspot.com","apiKey":"AIzaSyBpbgoBx-QSt77RlujY45XWEsMiut6oYTU","authDomain":"projeto-suzane.firebaseapp.com","messagingSenderId":"86914146221"}
+[debug] [2023-06-12T02:48:51.831Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/projeto-suzane [none]
+[debug] [2023-06-12T02:48:52.229Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/projeto-suzane 200
+[debug] [2023-06-12T02:48:52.229Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/projeto-suzane {"projectId":"projeto-suzane","projectNumber":"86914146221","displayName":"Projeto-Suzane","name":"projects/projeto-suzane","resources":{"hostingSite":"projeto-suzane"},"state":"ACTIVE","etag":"1_2ac0b293-36bc-459e-82f2-33c59d11d330"}
+[info] i  hosting[projeto-suzane]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[projeto-suzane]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [12/Jun/2023:02:48:55 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [12/Jun/2023:02:48:55 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [12/Jun/2023:02:48:55 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [12/Jun/2023:02:48:55 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
